@@ -26,7 +26,7 @@ a.anchor {
 }
 
 #splash{
-  background-image: url(http://s13.postimg.org/u1kyg6ol3/notebook_hero_workspace_minimal.jpg);
+  background-image: url(../images/home.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -53,7 +53,7 @@ a.anchor {
   }
 
 #portfolio{
-  background-image: url(https://images.unsplash.com/uploads/14108632958755ac7f7f3/fe4a5cbf?crop=entropy&dpr=2&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450);
+  background-image: url(../images/portfolio.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -115,7 +115,7 @@ a.anchor {
 }
 
 #about{
-  background-image: url(https://images.unsplash.com/photo-1455905575900-77d624d2f9c5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=bef2d731c8fc48ab36bb1e265dd0d35d);
+  background-image: url(../images/about.jpg);
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -141,9 +141,9 @@ a.anchor {
   }
 
 #white-bg{
-  /*background-color: rgba(0,0,0, 0.5);
+  background-color: rgba(0,0,0, 0.7);
   border-radius: 20px;
-  margin-right: 10px;*/
+  margin-right: 10px;
   float: left;
   display: inline-block;
   vertical-align: middle;
@@ -151,7 +151,7 @@ a.anchor {
 }
 
 #contact{
-  background-image: url(https://images.unsplash.com/photo-1429051781835-9f2c0a9df6e4?crop=entropy&dpr=2&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450);
+  background-image: url(../images/contact.jpg);
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -197,5 +197,5 @@ a.anchor {
   }
 
 hr{
-  width: 500px;
+  width: 33%;
 }
