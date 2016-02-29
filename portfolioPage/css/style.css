@@ -1,8 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Ubuntu|Roboto:400,700);
 
 /*html, body{
   height: 100%;
 }*/
+
+body{
+  font-family: "Ubuntu", sans-serif;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
 
 .navbar-brand{
   font-family: "Dancing Script", cursive;
@@ -15,7 +26,7 @@
 }
 
 #splash{
-  background-image: url(https://images.unsplash.com/7/Top_view.jpg?crop=entropy&dpr=2&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450);
+  background-image: url(http://s13.postimg.org/u1kyg6ol3/notebook_hero_workspace_minimal.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -42,7 +53,7 @@
   }
 
 #portfolio{
-  background-image: url(https://images.unsplash.com/photo-1441311956160-78a471e0638d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=525c91c050537c1f9388ca0ccc4b6b47);
+  background-image: url(https://images.unsplash.com/uploads/14108632958755ac7f7f3/fe4a5cbf?crop=entropy&dpr=2&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -62,10 +73,10 @@
   position: relative;
 }
 
-.thumbnail img{
-  min-height: 250px;
-  min-width: 300px;
-}
+  .thumbnail img{
+    min-height: 250px;
+    min-width: 300px;
+  }
 
 .thumbnail-hover{
   position: absolute;
@@ -138,6 +149,52 @@
   vertical-align: middle;
   padding: 6% 2%;
 }
+
+#contact{
+  background-image: url(https://images.unsplash.com/photo-1429051781835-9f2c0a9df6e4?crop=entropy&dpr=2&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 50px;
+  color: #fff;
+}
+
+  #contact h1{
+    font-size: 5em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.5),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  }
+
+  #contact h2{
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.5),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  }
+
+  #contact address{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  #contact .fa-stack{
+    color: #333;
+  }
+
+  #contact .fa-stack:hover .fa-stack-1x{
+    color: #333;
+    transition: 0.5s;
+  }
+
+  #contact .fa-stack:hover .fa-stack-2x{
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  #contact a{
+    text-decoration: none;
+  }
 
 hr{
   width: 500px;
