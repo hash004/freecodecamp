@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffe9b5;
+}
+
+.container{
+  padding-top: 10%;
+  color: #2d0707;
+}
+
+.jumbotron{
+  background-color: #ab6e22;
+}
+
+.jumbotron h1{
+  color: #4d0404;
+  font-size: 4em;
+}
+
+.jumbotron p{
+  font-size: 2em;
+}

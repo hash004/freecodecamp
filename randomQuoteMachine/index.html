@@ -1,0 +1,46 @@
+<!-- Quotes API http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random Quote Generator</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="./javascript/script.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <!-- Start Container for Quotes -->
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 id="title"></h1>
+          </div>
+          <div class="col-lg-12">
+            <i class="fa fa-quote-left fa-3x"></i>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10 quote">
+
+          </div>
+          <div class="col-lg-12 text-right">
+            <i class="fa fa-quote-right fa-3x"></i>
+          </div>
+          <p>
+            <a id="new-quote" class="btn btn-success btn-lg" role="button">New Quote</a>
+            <a class="btn btn-info btn-lg" href="#" role="button"><i class="fa fa-twitter"></i> Tweet</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End Container for Quotes -->
+
+  </body>
+</html>
