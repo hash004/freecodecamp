@@ -1,0 +1,17 @@
+body{
+  background-color: #F5FAFA;
+}
+
+.container{
+  margin-top: 5%;
+  width: 50%;
+  background-color: #B3E5FC;
+  border-radius: 10px;
+}
+
+.jumbotron{
+  background-color: #B3E5FC;
+}
+  .jumbotron h1{
+    font-size: 3em;
+  }
