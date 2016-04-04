@@ -1,17 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+
 body{
+  font-family: 'Ubuntu', sans-serif;
   background-color: #F5FAFA;
 }
 
 .container{
   margin-top: 5%;
   width: 50%;
-  background-color: #B3E5FC;
+  background-color: rgba(17,138,178, 0.5);
   border-radius: 10px;
+  font-size: 2em;
+  color: white;
+  padding: 20px;
 }
 
-.jumbotron{
-  background-color: #B3E5FC;
+.sunny{
+  background: url("../images/sunny.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
-  .jumbotron h1{
-    font-size: 3em;
-  }
+
+.cloud{
+  background: url("../images/cloud.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.mist{
+  background: url("../images/mist.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.rain{
+  background: url("../images/rain.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.snow{
+  background: url("../images/snow.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.thunder{
+  background: url("../images/thunder.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#temp{
+  font-size: 1.5em;
+  color: #FFF1D0;
+  cursor: pointer;
+}
+
+#weather i{
+  font-size: 2.5em;
+}
