@@ -1,10 +1,30 @@
 body{
   background-color: #49b6bc;
 }
+
+h2{
+  color: #C70039;
+}
+
+h3{
+  text-align: center;
+  padding: 10px;
+}
+
+p{
+  text-align: center;
+}
+
+#personal{
+  color: #fff;
+  text-decoration: none;
+}
+
 .container{
   padding-top: 10%;
 }
 
 .jumbotron{
   background-color: #e2e2e2;
+  color: #323232;
 }
