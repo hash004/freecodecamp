@@ -1,0 +1,12 @@
+.container{
+  padding-top: 5%;
+  font-size: 20pt;
+}
+
+.row{
+  background-color: #DDD;
+  border-radius: 25px;
+  height: 300px;
+  padding: 2%;
+  margin: 5%;
+}
