@@ -1,12 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
 .container{
   padding-top: 5%;
-  font-size: 20pt;
+  font-size:30pt;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .row{
   background-color: #DDD;
   border-radius: 25px;
-  height: 300px;
   padding: 2%;
   margin: 5%;
+}
+
+.temp{
+  font-size: 30pt;
+  display:inline-block;
+}
+
+.weather-icon{
 }
