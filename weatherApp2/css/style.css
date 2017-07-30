@@ -7,7 +7,7 @@
 }
 
 .row{
-  background-color: #DDD;
+  background-color: rgba(255,255,255,0.6);
   border-radius: 25px;
   padding: 2%;
   margin: 5%;
@@ -18,5 +18,46 @@
   display:inline-block;
 }
 
-.weather-icon{
+p{
+  text-align: center;
+}
+#personal{
+  color: #333;
+  font-size: 18pt;
+  text-decoration: none;
+}
+
+.celsiusToFahrenheit{
+  color: #3498DB;
+  cursor: pointer;
+}
+
+.sunny{
+  background: url("../images/sunny.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.cloud{
+  background: url("../images/cloud.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.mist{
+  background: url("../images/mist.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.rain{
+  background: url("../images/rain.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.snow{
+  background: url("../images/snow.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.thunder{
+  background: url("../images/thunder.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
