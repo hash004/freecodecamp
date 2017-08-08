@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
 
+/* Background pattern from Subtle Patterns */
 body {
+  background-image: url("../images/halftone.png");
   background-color: #FBFBFB;
   font-family: 'Open Sans', sans-serif;
   color: #4C5454;
@@ -13,7 +15,8 @@ h1 {
 
 h1 small {
   font-family: 'Open Sans', sans-serif;
-  font-size: 50%;
+  font-size: 35%;
+  font-weight: bold;
   color: #523F38;
 }
 
@@ -21,8 +24,13 @@ h1 small {
   padding: 15% 15% 5%;
 }
 
-.results {
-  padding: 0 10%;
+.random, .random a{
+  text-decoration: none;
+  text-align: right;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #FF664F;
 }
 
 .input-lg {
@@ -30,7 +38,11 @@ h1 small {
   padding: 20px 32px;
   font-size: 18px;
   line-height: 1.3333333;
-  border-radius: 12px;
+  border-radius: 20px;
+}
+
+.results {
+  padding: 0 10%;
 }
 
 a.list-group-item .list-group-item-heading, button.list-group-item .list-group-item-heading {
@@ -43,12 +55,7 @@ a.list-group-item .list-group-item-heading, button.list-group-item .list-group-i
   font-weight: bold;
 }
 
-.list-group-item:first-child {
-  margin-bottom: 5px;
-  border-radius: 10px;
-}
-
-.list-group-item:last-child {
-  margin-bottom: 5px;
+.list-group-item:first-child, .list-group-item:last-child, .list-group-item{
+  margin-bottom: 8px;
   border-radius: 10px;
 }
