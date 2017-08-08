@@ -59,3 +59,10 @@ a.list-group-item .list-group-item-heading, button.list-group-item .list-group-i
   margin-bottom: 8px;
   border-radius: 10px;
 }
+
+.footer, .footer a {
+  text-decoration: none;
+  color: #FF664F;
+  text-align: center;
+  padding: 5% 0% 2%;
+}
