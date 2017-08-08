@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
+
+body {
+  background-color: #FBFBFB;
+  font-family: 'Open Sans', sans-serif;
+  color: #4C5454;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #FF664F;
+}
+
+h1 small {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50%;
+  color: #523F38;
+}
+
+.search {
+  padding: 15% 15% 5%;
+}
+
+.results {
+  padding: 0 10%;
+}
+
+.input-lg {
+  height: 80px;
+  padding: 20px 32px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 12px;
+}
+
+a.list-group-item .list-group-item-heading, button.list-group-item .list-group-item-heading {
+  color: #FF664F;
+  font-weight: bold;
+}
+
+.searchmatch {
+  color: #523F38;
+  font-weight: bold;
+}
+
+.list-group-item:first-child {
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.list-group-item:last-child {
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
