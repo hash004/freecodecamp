@@ -1,0 +1,21 @@
+/* Background pattern from Subtle Patterns */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Baloo+Bhaina');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("../images/bg.png");
+  color: #00171F;
+}
+
+h1 {
+  font-family: 'Baloo Bhaina', cursive;
+  color: #17B0AD;
+  margin-top: 3%;
+}
+
+h1 small {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35%;
+  font-weight: bold;
+  color: #003459;
+}
