@@ -23,5 +23,18 @@ h1 small {
 }
 
 .content {
-  margin-left: 15%;
+  padding-left: 15%;
+  margin-top: 10%;
+}
+
+.panel-default>.panel-heading {
+  color: #FFF;
+  font-weight: bold;
+  background-color: #17B0AD;
+  border-color: #17B0AD;
+}
+
+li a{
+  color: #17B0AD;
+  font-weight: bold;
 }
