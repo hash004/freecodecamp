@@ -34,7 +34,20 @@ h1 small {
   border-color: #17B0AD;
 }
 
-li a{
+a{
   color: #17B0AD;
   font-weight: bold;
+}
+
+img{
+  height: 100px;
+  width: 100px;
+}
+
+.display-name{
+  font-weight: bold;
+}
+
+.table > tbody > tr > td {
+    vertical-align: middle;
 }

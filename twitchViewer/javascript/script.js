@@ -1,24 +1,34 @@
 var streamers = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
-var online = [];
-var offline = [];
+
 
 function getStream(){
   streamers.forEach(function(streamer, i){
     var feed;
     function getUser(status){
       $.getJSON( "https://wind-bow.glitch.me/twitch-api/users/"+streamer, function(usersEP) {
+        if(usersEP.logo==null){
+          usersEP.logo = "https://unsplash.it/100/100/?random";
+        }
         if(status=="Offline"){
-          offline.push([
-            usersEP.display_name,
-            usersEP.logo,
-            status
-          ]);
+          var offlineHtml ="";
+          offlineHtml += '<tr class="danger"><td>';
+          offlineHtml += '<img class="img-responsive img-circle" src="' + usersEP.logo + '" />';
+          offlineHtml += '</td><td class="display-name"><a href="https://www.twitch.tv/' + usersEP.name + '">';
+          offlineHtml += usersEP.display_name;
+          offlineHtml += '</a></td><td>';
+          offlineHtml += status;
+          offlineHtml += '</td></tr>';
+          $('table').append(offlineHtml);
         } else {
-          online.push([
-            usersEP.display_name,
-            usersEP.logo,
-            status
-          ]);
+          var onlineHtml ="";
+          onlineHtml += '<tr class="success"><td>';
+          onlineHtml += '<img class="img-responsive img-circle" src="' + usersEP.logo + '" />';
+          onlineHtml += '</td><td class="display-name"><a href="https://www.twitch.tv/' + usersEP.name + '">';
+          onlineHtml += usersEP.display_name;
+          onlineHtml += '</td><td>';
+          onlineHtml += status;
+          onlineHtml += '</td></tr>';
+          $('table').prepend(onlineHtml);
         }
       });
     }
@@ -32,24 +42,21 @@ function getStream(){
     });
   });
 }
-
-function insertHTML(){
-  var onlineHtml ="";
-  online.forEach(function(onlineUsers){
-    onlineHtml += '<tr class="success"><td>';
-    onlineHtml += onlineUsers[1];
-    onlineHtml += '</td><td>';
-    onlineHtml += onlineUsers[0];
-    onlineHtml += '</td><td>';
-    onlineHtml += onlineUsers[2];
-    onlineHtml += '</td></tr>';
-    console.log("test");
-  });
-    $('table').html(onlineHtml);
-    console.log(onlineHtml);
-
-}
 $( document ).ready(function() {
+  $(".all").click(function(){
+    $(".all").addClass("active");
+    $(".online, .offline, .success, .danger").removeClass('active hidden');
+  });
+  $(".online").click(function(){
+    $(".online").addClass("active");
+    $(".all, .offline, .success, .danger").removeClass('active hidden');
+    $(".danger").addClass('hidden');
+  });
+  $(".offline").click(function(){
+    $(".offline").addClass("active");
+    $(".all, .online, .success, .danger").removeClass('active hidden');
+    $(".success").addClass('hidden');
+
+  });
 getStream();
-insertHTML();
 });
